@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mindmate-dev-78126-authRole",
+      "UnauthRoleArn": "arn:aws:iam::209479308818:role/amplify-mindmate-dev-78126-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::209479308818:role/amplify-mindmate-dev-78126-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-mindmate-dev-78126-deployment",
+      "UnauthRoleName": "amplify-mindmate-dev-78126-unauthRole",
+      "StackName": "amplify-mindmate-dev-78126",
+      "StackId": "arn:aws:cloudformation:us-east-2:209479308818:stack/amplify-mindmate-dev-78126/f6079ed0-40dd-11f0-949f-0618d08f6acf",
+      "AmplifyAppId": "d1zakn9gvzto8a"
+    },
+    "categories": {
+      "function": {
+        "mindmateLambda": {
+          "modelId": "anthropic.claude-3-haiku-20240307-v1:0",
+          "tableName": "MindMateLogs",
+          "region": "us-east-2",
+          "apiKey": "your-sendgrid-api-key",
+          "secretsPathAmplifyAppId": "d1zakn9gvzto8a"
+        }
+      }
+    }
+  }
+}

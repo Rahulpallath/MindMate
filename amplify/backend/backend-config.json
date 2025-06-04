@@ -1,0 +1,68 @@
+{
+  "api": {
+    "mindmateAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "mindmateLambda"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "mindmateLambda": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_mindmateLambda_apiKey": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mindmateLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_mindmateLambda_modelId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mindmateLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_mindmateLambda_region": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mindmateLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_mindmateLambda_secretsPathAmplifyAppId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mindmateLambda"
+        }
+      ]
+    },
+    "AMPLIFY_function_mindmateLambda_tableName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "mindmateLambda"
+        }
+      ]
+    }
+  }
+}
