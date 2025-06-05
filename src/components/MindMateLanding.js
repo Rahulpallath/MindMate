@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import { 
   Heart, MessageCircle, Users, Target, CheckSquare, Wind, 
   Play, Pause, RotateCcw, Clock, Info, Plus, X, Check,
@@ -10,6 +11,7 @@ const MindMateLanding = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+
   // Breathing Exercise Component
   const BreathingExercise = () => {
     const [selectedExercise, setSelectedExercise] = useState(null);
@@ -18,7 +20,7 @@ const MindMateLanding = () => {
     const [phase, setPhase] = useState('');
     const [cycle, setCycle] = useState(0);
     const intervalRef = useRef(null);
-
+    const navigate = useNavigate();
     const exercises = {
       box: {
         name: 'Box Breathing',
@@ -496,10 +498,12 @@ const MindMateLanding = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3">
+            <Link to="/" className="flex items-center space-x-3">
             <Heart className="w-8 h-8 text-pink-500" />
             <h1 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-800'}`}>
               MindMate
             </h1>
+            </Link>
           </div>
           
           <div className="hidden md:flex space-x-8">
