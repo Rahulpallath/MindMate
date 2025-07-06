@@ -118,7 +118,7 @@ const MindMate = () => {
           </div>
           <button onClick={() => setSidebarOpen(false)} className="lg:hidden">
             <X className="w-6 h-6" />
-          </button>
+          </button> 
         </div>
         <div className="p-4 space-y-4">
           <div className={`p-3 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-blue-100'}`}>
